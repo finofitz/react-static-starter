@@ -12,7 +12,7 @@ export default () => (
         <ul>
           {posts.map(post => (
             <li key={post.id}>
-              <Link to={`/blog/post/${post.id}/`}>{post.title}</Link>
+              <Link to={`/blog/post/${post.QuestionID}/`}>{post.QuestionID}</Link>
             </li>
           ))}
         </ul>

@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   getRoutes: async () => {
     const { data: posts } = await axios.get(
-      "https://jsonplaceholder.typicode.com/posts"
+      "http://thomasproduct.prod.acquia-sites.com/en/ppaquestionset"
     );
     return [
       {
@@ -21,7 +21,7 @@ export default {
           posts
         }),
         children: posts.map(post => ({
-          path: `/post/${post.id}`,
+          path: `/post/${post.QuestionID}`,
           component: "src/containers/Post",
           getData: () => ({
             post

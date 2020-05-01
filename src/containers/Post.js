@@ -8,8 +8,8 @@ export default () => (
       <div>
         <Link to="/blog/">{'<'} Back</Link>
         <br />
-        <h3>{post.title}</h3>
-        <p>{post.body}</p>
+        <h3>{post.Options[0].Caption}</h3>
+        <p>{post.Options[0].SupportingText}</p>
       </div>
     )}
   />
